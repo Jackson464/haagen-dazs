@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하겐다즈 공식 스토어</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/Häagen-Dazs_Logo.png">
+
+    <!-- swiper slide css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/swiper.css"> -->
+
+    <!-- jquery lib -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- mobile menu btn -->
+        <a href="#" class="mb-bt">
+            <span class="line"></span>
+        </a>
+        <!-- mobile menu bar -->
+        <div class="mb-nav">
+            <div class="mb-nav-top clear">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">장바구니</a>
+                <a href="#">주문/배송조회</a>
+            </div>
+            <div class="mb-nav-main">
+                <ul class="mb-menu">
+                    <li>
+                        <a href="#" class="mb-mainmenu">전체제품</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">컵</a></li>
+                            <li><a href="#">스틱바</a></li>
+                            <li><a href="#">케이크&디저트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">이벤트</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">진행중 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">멤버십</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">멤버십 혜택</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-mainmenu">ABOUT</a>
+                        <ul class="mb-submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">외식사업 고객용<br>[B2B]</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-menu-mask"></div>
+        <!-- header -->
+        <header class="header">
+            <div class="header-inner inner">
+                <div class="header-top clear">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="images/logo/logo-text.png" alt="#">
+                        </a>
+                    </h1>
+                    <div class="content-right">
+                        <nav class="log-in">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">주문/배송조회</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">전체제품</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">컵</a></li>
+                                    <li><a href="#">스틱바</a></li>
+                                    <li><a href="#">케이크&디저트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이벤트</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">진행중 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li>
+                                    <li><a href="#">종료된 이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">멤버십</a>
+                                <ul class="sub-menu sub03">
+                                    <li><a href="#">멤버십 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">매장안내</a></li>
+                                    <li><a href="#">외식사업 고객용<br>[B2B]</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-search-container">
+                        <form method="GET">
+                            <label class="search-container clear">
+                                <input class="search-input left" type="text" name="q" size="12">
+                                <button class="search-btn">
+                                    <span class="icon">
+                                        <svg viewBox="0 0 19 20">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 18.6l-5.2-5.2C15.2 12 16 10.1 16 8c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c1.6 0 3.1-.5 4.3-1.3l5.3 5.3 1.4-1.4zM2 8c0-3.3 2.7-6 6-6 1.6 0 3.1.6 4.2 1.8C13.4 4.9 14 6.4 14 8s-.6 3.1-1.8 4.2C11.1 13.4 9.6 14 8 14c-3.3 0-6-2.7-6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <div class="main">
+            <!-- visual banner -->
+            <div class="visual-banner">
+                <div class="swiper main-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="vs-slide1">
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="vs-slide2">
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="vs-slide3">
+                                <i></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="visual-catalogue">
+                <div class="wrapper">
+                    <div class="catalogue-inner inner">
+                        <div class="new">
+                            <a href="#">
+                                <img src="images/contents/new01.png" alt="">
+                            </a>
+                            <div class="icon-wrap">
+                                <p class="name">
+                                    <a href="#">
+                                        <span>하겐다즈 레드벨벳 치즈케이크(파인트) 473ml</span>
+                                    </a>
+                                </p>
+                                <p class="before-price">
+                                    <span>₩15,500</span>
+                                </p>
+                                <p class="now-price">
+                                    <a href="#">
+                                        <span>₩</span><em>10,850</em>
+                                    </a>
+                                </p>
+                                <div class="status">
+                                    <div class="button-cart">
+                                        <img src="images/icon/cart.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best">
+                            <img src="images/icon/best.png" alt="">
+                            <div class="best01">
+                                <a href="#">
+                                    <img src="images/contents/best01.png" alt="">
+                                </a>
+                                <div class="icon-wrap">
+                                    <p class="name">
+                                        <a href="#">
+                                            <span>하겐다즈 벨지안초콜릿 & 바닐라 (파인트) 403ml</span>
+                                        </a>
+                                    </p>
+                                    <p class="before-price">
+                                        <span>₩15,500</span>
+                                    </p>
+                                    <p class="now-price">
+                                        <a href="#">
+                                            <span>₩</span><em>10,850</em>
+                                        </a>
+                                    </p>
+                                    <div class="status">
+                                        <div class="button-cart">
+                                            <img src="images/icon/cart.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="best02">
+                                <a href="#">
+                                    <img src="images/contents/best02.png" alt="">
+                                </a>
+                                <div class="icon-wrap">
+                                    <p class="name">
+                                        <a href="#">
+                                            <span>하겐다즈 브라우니 라즈베리 (파인트) 403ml</span>
+                                        </a>
+                                    </p>
+                                    <p class="before-price">
+                                        <span>₩15,500</span>
+                                    </p>
+                                    <p class="now-price">
+                                        <a href="#">
+                                            <span>₩</span><em>10,850</em>
+                                        </a>
+                                    </p>
+                                    <div class="status">
+                                        <div class="button-cart">
+                                            <img src="images/icon/cart.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-ice">
+                            <div class="mb-ice-top">
+                                <h2>RECOMEND</h2>
+                            </div>
+                            <div class="mb-ice-swiper">
+                                <div class="swiper mb-ice-contents">
+                                    <div class="swiper-wrapper ice-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide1">
+                                                <div class="ice01">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice01.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 벨지안초콜릿 & 바닐라 (파인트) 403ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide2">
+                                                <div class="ice02">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice02.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 브라우니 라즈베리 (파인트) 403ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide3">
+                                                <div class="ice03">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice03.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 레드벨벳 치즈케이크(파인트) 473ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide1">
+                                                <div class="ice01">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice01.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 벨지안초콜릿 & 바닐라 (파인트) 403ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide2">
+                                                <div class="ice02">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice02.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 브라우니 라즈베리 (파인트) 403ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="ice-slide3">
+                                                <div class="ice03">
+                                                    <a href="#">
+                                                        <img src="images/mb-ice/ice03.jpg" alt="">
+                                                    </a>
+                                                    <div class="icon-wrap">
+                                                        <p class="name">
+                                                            <a href="#">
+                                                                <span>하겐다즈 레드벨벳 치즈케이크(파인트) 473ml</span>
+                                                            </a>
+                                                        </p>
+                                                        <p class="before-price">
+                                                            <span>₩15,500</span>
+                                                        </p>
+                                                        <p class="now-price">
+                                                            <a href="#">
+                                                                <span>₩</span><em>10,850</em>
+                                                            </a>
+                                                        </p>
+                                                        <div class="status">
+                                                            <div class="button-cart">
+                                                                <img src="images/icon/cart.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-inner inner">
+                        <div class="event">
+                            <div class="event-logo">
+                                <h2>EVENT</h2>
+                            </div>
+                            <div class="stick">
+                                <div class="stick01">
+                                    <a href="#">
+                                        <img src="images/contents/stick01.jpg" alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 브라운슈가 밀크티 <br> (싱글바) 80ml</span>
+                                            </a>
+                                        </p>
+                                        <!-- <p class="before-price">
+                                            <span>₩5,500</span>
+                                        </p> -->
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>3,850</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stick02">
+                                    <a href="#">
+                                        <img src="images/contents/stick02.jpg" alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 워터멜론 & 스트로베리 <br> (싱글바) 80ml</span>
+                                            </a>
+                                        </p>
+                                        <!-- <p class="before-price">
+                                            <span>₩5,500</span>
+                                        </p> -->
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>3,850</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stick03">
+                                    <a href="#">
+                                        <img src="images/contents/stick03.jpg" alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 벨지안초콜릿 & 스트로베리 <br> (싱글바) 80ml</span>
+                                            </a>
+                                        </p>
+                                        <!-- <p class="before-price">
+                                            <span>₩5,500</span>
+                                        </p> -->
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>3,850</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visual-video">
+                <div class="video-wrap inner">
+                    <div class="video-left">
+                        <h2>CAMPAIGN</h2>
+                        <p>#하겐다즈 레드벨벳</p>
+                    </div>
+                    <div class="video-right">
+                        <div class="video-contents">
+                            <iframe src="https://www.youtube.com/embed/i0ZDrrzHcAM?mute=1" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visual-bottom">
+                <div class="bottom-wrap inner">
+                    <div class="bottom-top">
+                        <h2>Dessert</h2>
+                    </div>
+                    <div class="circle-top">
+                        <div class="circle-B"></div>
+                        <div class="circle-S"></div>
+                    </div>
+                    <div class="circle-bottom">
+                        <div class="circle-B"></div>
+                        <div class="circle-S"></div>
+                    </div>
+                    <div class="bottom-contents">
+                        <div class="contents-left">
+                            <div class="left-top">
+                                <div class="dessert01">
+                                    <a href="#">
+                                        <img src="images/contents/dessert-cake01-mini.jpg" alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>[하겐다즈X빌리엔젤] 레드벨벳 라즈베리<br>아이스크림 케이크</span>
+                                            </a>
+                                        </p>
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>42,900</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dessert02">
+                                    <a href="#">
+                                        <img class="defalt" src="images/contents/dessert-cake02-mini.jpg" alt="">
+                                        <img class="d-hover" src="images/contents/dessert-cake02-mini-hover.jpg" alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 비욘드 쇼콜라 아이스크림 케이크</span>
+                                            </a>
+                                        </p>
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>42,900</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-bottom">
+                                <div class="dessert03">
+                                    <a href="#">
+                                        <img class="defalt" src="images/contents/dessert-cupcake-01-mini.png" alt="">
+                                        <img class="d-hover" src="images/contents/dessert-cupcake-01-mini-hover.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 프리미엄 아이스크림 컵케이크<br>4종 세트</span>
+                                            </a>
+                                        </p>
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>36,900</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dessert04">
+                                    <a href="#">
+                                        <img class="defalt" src="images/contents/dessert-macaroon-01-mini.jpg" alt="">
+                                        <img class="d-hover" src="images/contents/dessert-macaroon-01-mini-hover.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="icon-wrap">
+                                        <p class="name">
+                                            <a href="#">
+                                                <span>하겐다즈 아이스크림 마카롱 9p</span>
+                                            </a>
+                                        </p>
+                                        <p class="now-price">
+                                            <a href="#">
+                                                <span>₩</span><em>37,900</em>
+                                            </a>
+                                        </p>
+                                        <div class="status">
+                                            <div class="button-cart">
+                                                <img src="images/icon/cart.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="contents-right">
+                            <img class="right-first" src="images/contents/dessert-right.png" alt="">
+                            <figcaption class="right-second">
+                                <img src="images/contents/dessert-right-2.png" alt="">
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="sns-wrap inner">
+                    <div class="sns-title">
+                        <h2>SNS</h2>
+                    </div>
+                    <div class="sns-tag">
+                        <div class="tag-box">
+                            <a>#하겐다즈</a>
+                        </div>
+                        <div class="tag-box">
+                            <a>#아이스크림</a>
+                        </div>
+                        <div class="tag-box">
+                            <a>#하겐다즈아이스크림케이크</a>
+                        </div>
+                        <div class="tag-box">
+                            <a>#Haagendazs</a>
+                        </div>
+                    </div>
+                    <div class="sns-banner">
+                        <div class="swiper sw-banner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="banner-slide1 sns-banner">
+                                        <img src="images/sns/sns02-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide2 sns-banner">
+                                        <img src="images/sns/sns03-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide3 sns-banner">
+                                        <img src="images/sns/sns05-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide4 sns-banner">
+                                        <img src="images/sns/sns06-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide5 sns-banner">
+                                        <img src="images/sns/sns07-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide6 sns-banner">
+                                        <img src="images/sns/sns08-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide1 sns-banner">
+                                        <img src="images/sns/sns02-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide2 sns-banner">
+                                        <img src="images/sns/sns03-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide3 sns-banner">
+                                        <img src="images/sns/sns05-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide4 sns-banner">
+                                        <img src="images/sns/sns06-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide5 sns-banner">
+                                        <img src="images/sns/sns07-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="banner-slide6 sns-banner">
+                                        <img src="images/sns/sns08-1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-inner inner">
+                <div class="footer-top">
+                    <div class="footer-left">
+                        <div class="left-top">
+                            <a href="#">
+                                <img src="images/logo/Häagen-Dazs_Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="left-bottom">
+                            <a href="#">
+                                <img src="images/icon/free-icon-instagram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/icon/facebook-app-symbol-color.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/icon/youtube-color.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="center-top">
+                            <nav>
+                                <ul class="footer-menu">
+                                    <li><a href="#">전체제품</a></li>
+                                    <li><a href="#">매장안내</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="center-bottom">
+                            <nav>
+                                <ul class="footer-list">
+                                    <li><a href="#">주소</a></li>
+                                    <li><a href="#">About Haagen-Dazs</a></li>
+                                    <li><a href="#">고객센터</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">개인정보 처리방침</a></li>
+                                    <li><a href="#">이메일무단수집거부</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="service-center">
+                            <p>하겐다즈 고객만족센터</p>
+                            <h3>070-7549-7020</h3>
+                            <p>*고객센터 운영시간 : 평일 10:00 ~ 17:00</p>
+                            <p>(점심시간 12:00 ~ 17:00)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-line">
+                    <span></span>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright &copy; 2021 Haagen-Dazs Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="js/swiper.jquery.js"></script> -->
+
+</body>
+</html>
