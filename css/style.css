@@ -80,7 +80,7 @@ body{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #600624;
     transition: all .3s;
 }
 .mb-bt .line{
@@ -91,7 +91,7 @@ body{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #600624;
     transition: all .3s;
 }
 .mb-bt::after{
@@ -102,7 +102,7 @@ body{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #600624;
     transition: all .3s;
 }
 .mb-bt-open::before{
@@ -401,7 +401,7 @@ body{
     /* object-fit: cover; */
     /* overflow: hidden; */
 }
-.main .visual-banner .main-swiper .swiper-slide a i{
+.main .visual-banner .main-swiper .swiper-slide a .tablet{
     display: block;
     width: 100%;
     padding-top: 50%;
@@ -425,6 +425,11 @@ body{
     display: block;
     width: 100%;
     padding-top: 50%;
+}
+.main .visual-banner .main-swiper .swiper-slide a.phone{
+    display: none;
+    width: 100%;
+    padding-top: 100%;
 }
 .main .visual-banner .main-swiper .swiper-button-next{
     /* color: rgb(46, 46, 46); */
@@ -486,6 +491,7 @@ body{
     /* height: 100%; */
     background: url(../images/bg/light-red-random-2.png) no-repeat center;
     background-size: 150%;
+    overflow: auto;
 }
 .main .visual-catalogue .wrapper{
     /* width: 1200px; */

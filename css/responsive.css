@@ -36,21 +36,21 @@
     .main .visual-banner .main-swiper .swiper-slide .vs-slide1{
         background: none;
     }
-    .main .visual-banner .main-swiper .swiper-slide .vs-slide1 > i{
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide1 .tablet01{
         background: url(../images/banner/banner-RVCC-mini.png) no-repeat center;
         background-size: cover;
     }
     .main .visual-banner .main-swiper .swiper-slide .vs-slide2{
         background: none;
     }
-    .main .visual-banner .main-swiper .swiper-slide .vs-slide2 > i{
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide2 .tablet02{
         background: url(../images/banner/banner-RBB-1-1.last-mini.png) no-repeat center;
         background-size: cover;
     }
     .main .visual-banner .main-swiper .swiper-slide .vs-slide3{
         background: none;
     }
-    .main .visual-banner .main-swiper .swiper-slide .vs-slide3 > i{
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide3 .tablet03{
         background: url(../images/banner/banner-makadamia-1-1.last-mini.png) no-repeat center;
         background-size: cover;
     }
@@ -293,6 +293,25 @@
     .main .visual-banner .main-swiper .swiper-slide a{
         height: 100%;
     }
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide .tablet{
+        background: none;
+        display: none;
+    }
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide .phone{
+        display: block;
+        width: 100%;
+        padding-top: 150%;
+    }
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide .phone01{
+        background: url(../images/banner/m-rb-001.png) no-repeat center / cover;
+    }
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide .phone02{
+        background: url(../images/banner/m-m-001.png) no-repeat center / cover;
+    }
+    .main .visual-banner .main-swiper .swiper-slide .vs-slide .phone03{
+        background: url(../images/banner/m-r-001.png) no-repeat center / cover;
+    }
+
     .main .visual-banner .main-swiper .swiper-button-next{
         display: none;
     }
